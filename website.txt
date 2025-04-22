@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- https://mdbootstrap.com/docs/standard/extended/testimonials/ -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>TechVolution 2024</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top shadow-5-strong navbar-scrolled"
+      data-mdb-navbar-init
+    >
+      <a class="navbar-brand titlee" style="font-size: x-large;" href="#">TechVolution</a>
+      <button
+        class="navbar-toggler navbar-dark"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon text-white"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav d-flex justify-content-end">
+          <!-- <div class="group1"> -->
+            <li class="nav-item active">
+              <a class="nav-link text-white" href="#">
+                Home <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house text-white" viewBox="0 0 20 20">
+                  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                </svg>
+                <span class="sr-only">
+                  <div
+                    class="bg-danger"
+                    height="20px"
+                    width="30px"
+                  ></div> </span
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#about">About
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 20 20">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                  <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#custom-cards">Features
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check2-all" viewBox="0 0 20 20">
+                  <path d="M12.354 4.354a.5.5 0 0 0-.708-.708L5 10.293 1.854 7.146a.5.5 0 1 0-.708.708l3.5 3.5a.5.5 0 0 0 .708 0zm-4.208 7-.896-.897.707-.707.543.543 6.646-6.647a.5.5 0 0 1 .708.708l-7 7a.5.5 0 0 1-.708 0"/>
+                  <path d="m5.354 7.146.896.897-.707.707-.897-.896a.5.5 0 1 1 .708-.708"/>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#testimonials"
+                >Testimonials
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-people" viewBox="0 0 20 20">
+                  <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4"/>
+                </svg>
+                </a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#events">Events
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-camera-reels" viewBox="0 0 20 20">
+                  <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0M1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0"/>
+                  <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2zm6 8.73V7.27l-3.5 1.555v4.35zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1"/>
+                  <path d="M9 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6M7 3a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#gallery">Gallery
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-images" viewBox="0 0 20 20">
+                  <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                  <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2M14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1M2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#timeline">Timeline
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list-task" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5zM3 3H2v1h1z"/>
+                  <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1z"/>
+                  <path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5zM2 7h1v1H2zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5zm1 .5H2v1h1z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Registration
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+                  <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#prizes">Prizes
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-trophy" viewBox="0 0 20 20">
+                  <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5q0 .807-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33 33 0 0 1 2.5.5m.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935m10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935M3.504 1q.01.775.056 1.469c.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.5.5 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667q.045-.694.056-1.469z"/>
+                </svg>
+              </a>
+            </li>
+          <!-- </div> -->
+        </ul>
+      </div>
+    </nav>
+
+    <div class="home">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1000">
+            <img
+              src="https://images.pexels.com/photos/919734/pexels-photo-919734.jpeg"
+              style="filter: blur(2px);"
+              height="625px"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div
+              class="carousel-caption d-none d-md-block"
+              style="text-align: start"
+            >
+              <h5 style="position: absolute; color: rgb(231, 225, 225); width: 30%">
+                Get Ready for
+                <span class="text-danger" style="font-size: 70px">Tech</span
+                ><span style="font-size: 70px">Volution</span><br />
+                <div
+                  style="
+                    font-size: 85px;
+                    font-family: Cambria, Cochin, Georgia, Times,
+                      'Times New Roman', serif;
+                  "
+                >
+                  2k24
+                </div>
+              </h5>
+              <p
+                class="text-white-50"
+                style="margin-top: 36vh; text-align: start; width: 50vw"
+              >
+               <!-- register -->
+               <!-- Button trigger modal -->
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Sign up now for TechVolution 
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-box-arrow-in-right" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+                  <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                </svg>
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title text-center" id="exampleModalLabel">TechVolution Registration Form</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- form -->
+                      <form class="form-card" id="form-card" action="/script.js" onsubmit="myFunc()">
+                        <!-- <div style="text-align: left; font-style: initial;">bPersonal Information</div> -->
+                        <div class="row justify-content-between text-left" style="margin-bottom: 8px;">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">First name<span class="text-danger"> *</span></label> <input type="text" id="fname" name="fname" placeholder="Enter your first name" onblur="" required="required"> </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Last name<span class="text-danger"> *</span></label> <input type="text" id="lname" name="lname" placeholder="Enter your last name" onblur="" required="required"> </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Date of Birth<span class="text-danger"> *</span></label> <input type="date" id="dob" name="dob" placeholder=""
+                                 onblur="" pattern="\d{1,2}\/\d{1,2}\/\d{4}" 
+                                required="required"> </div>          
+                            <div class="form-group col-sm-6 flex-column d-flex">
+                                <label>Gender<span class="text-danger"> *</span></label>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="male" value="Male" required="required">
+                                    <label class="form-check-label" for="male">Male</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="female" value="Female" required="required">
+                                    <label class="form-check-label" for="female">Female</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="gender" id="non-binary" value="non-binary" required="required">
+                                    <label class="form-check-label" for="non-binary">Non-Binary</label>
+                                </div>
+                            </div>           
+                        </div>
+
+                        <div class="row justify-content-between text-left" style="margin-bottom: 8px;">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Email Address<span class="text-danger"> *</span></label> <input type="text" id="email" name="email" placeholder="" onblur="" required="required"> </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Phone number<span class="text-danger"> *</span></label> <input type="text" id="phn" name="phn" placeholder="" onblur=""> </div>
+                        </div>
+
+                        <div class="row justify-content-between text-left"  style="margin-bottom: 8px;">
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Street Address<span class="text-danger"> *</span></label> <input type="text" id="address1" name="address1" placeholder="" onblur="" required="required"> </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">City<span class="text-danger"> *</span></label> <input type="text" id="city" name="city" placeholder="" onblur="" required="required"> </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> 
+                                <label for="state" class="form-control-label px-3">State<span class="text-danger"> *</span></label>
+                                    <select name="state" id="state">
+                                        <option value="Jharkhand">Jharkhand</option>
+                                        <option value="West Bengal">West Bengal</option>
+                                        <option value="Tamil Nadu">Tamil Nadu</option>
+                                        <option value="Maharashtra">Maharashtra</option>
+                                        <option value="Rajasthan">Rajasthan</option>
+                                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                        <option value="Haryana">Haryana</option>
+                                        <option value="Punjab">Punjab</option>
+                                        <option value="Bihar">Bihar</option>
+                                        <option value="Chattisgarh">Chattisgarh</option>
+                                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                        <option value="Gujarat">Gujarat</option>
+                                        <option value="Goa">Goa</option>
+                                        <option value="Sikkim">Sikkim</option>
+                                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                        <option value="Odisha">Odisha</option>
+                                        <option value="Kerala">Kerala</option>
+                                        <option value="Karnataka">Karnataka</option>
+                                        <option value="Assam">Assam</option>
+                                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                        <option value="Telangana">Telangana</option>
+                                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                                        <option value="Manipur">Manipur</option>
+                                        <option value="Meghalaya">Meghalaya</option>
+                                        <option value="Mizoram">Mizoram</option>
+                                        <option value="Nagaland">Nagaland</option>
+                                        <option value="Tripura">Tripura</option>
+                                        <option value="Uttarakhand">Uttarakhand</option>
+                                        <option value="Delhi">Delhi</option>
+                                        <option value="Chandigarh">Chandigarh</option>
+                                    </select>
+                            </div>
+                            <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">Zip Code<span class="text-danger"> *</span></label> <input type="text" id="zip" name="zip" placeholder="" onblur="" required="required">  </div>
+                        </div>
+
+                        <div class="row justify-content-between text-left"  style="margin-bottom: 8px;">
+                            <div class="form-group col-12 flex-column d-flex"> 
+                                <label for="preferences" class="form-control-label px-3">Event Preferences</label>
+                                <select name="preferences" id="preferences">
+                                    <option value="Conference">Conference</option>
+                                    <option value="Panel Discussion">Panel Discussion</option>
+                                    <option value="Seminar">Seminar</option>
+                                    <option value="Exhibition">Exhibition</option>
+                                    <option value="Training Session">Training Session</option>
+                                </select>
+                                <!-- <input type="text" id="preferences" name="preferences" placeholder="" onblur="validate(6)">  -->
+                            </div>
+                            <div class="form-group col-12 flex-column d-flex"> 
+                                <label for="dr" class="form-control-label px-3">Dietary Restrictions</label> 
+                                <textarea name="dr" id="dr" cols="30" rows="5"></textarea>
+                            </div>
+                            <div class="form-group col-12 flex-column d-flex"> 
+                                <label for="tshirt" class="form-control-label px-3">T-shirt size</label> 
+                                <select name="tshirt" id="tshirt">
+                                    <option value="xs">XS</option>
+                                    <option value="s">S</option>
+                                    <option value="m">M</option>
+                                    <option value="l">L</option>
+                                    <option value="xl">XL</option>
+                                    <option value="xxl">XXL</option>
+                                </select>
+                            </div>
+
+                        </div>
+                     
+                        <div class="row">
+                            <div class="form-group col-sm-6"> 
+                                <button type="submit" class="btn-block bg-info text-white">Register</button> 
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </p>
+              <!-- <p style="color: white;">Some representative placeholder content for the first slide.</p> -->
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1000">
+            <img
+              src="D:\embrizon project\960x0.webp"
+              height="625px"
+              class="d-block w-100 img2"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block text-white">
+              <h5 style="font-size: 36px; margin-top: 115px; margin-bottom: 10px;">Experience the Future</h5>
+              <p style="font-size: 20px;">
+                Unveiling Innovation, Connecting Minds, and Shaping Tomorrow
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- features -->
+
+    <div class="container px-4 py-5" id="custom-cards">
+      <div class="pb-2 border-bottom">
+        <h5 style="font-size: 40px; text-align: center" class="">
+          Tech<span class="text-danger" style="font-style: italic"
+            >Volution</span
+          >
+          Features
+        </h5>
+      </div>
+
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('./car1.jpg')"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h2 class="pt-5 mt-2 mb-5 display-9 lh-1 fw-bold">
+                Panel Discussions
+              </h2>
+              <p>Experts sharing insights and engaging in discussions on specific topics or emerging technologies.</p>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <!-- <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> -->
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Kolkata</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>3d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="
+              background-image: url('https://i.pinimg.com/564x/96/c6/4a/96c64a60794c2745af8a8ebe0e295fba.jpg');
+            "
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h2 class="pt-5 mt-2 mb-5 display-9 lh-1 fw-bold">
+                Workshop Sessions
+              </h2>
+              <p>Hands-on sessions where attendees can learn new skills, tools, and techniques directly from industry professionals.</p>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <!-- <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> -->
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Kolkata</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>4d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="col">
+          <div
+            class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="
+              background-image: url('https://t3.ftcdn.net/jpg/02/98/55/92/360_F_298559228_qAu46P4ahX5oneA6pNIkATQhXIXmoRRU.jpg');
+            "
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h2 class="pt-5 mt-2 mb-5 display-9 lh-1">Hackathons</h2>
+              <p> Intense collaborative events where developers, designers, and entrepreneurs come together to create innovative solutions</p>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <!-- <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white"> -->
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Kolkata</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>3d</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+
+>
+
+    <!-- prizes -->
+    <div style="margin-left: 50px; margin-right: 50px; margin-top: 30px; margin-bottom: 40px;" id="prizes">
+      <h5 class="text-center" style="font-size: 40px; margin-bottom: 40px; text-align: center">Score Swag and More: Our <span class="text-danger" style="font-style: italic;">Prize</span> Collection Awaits!</h5>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="D:\embrizon project\t shirt.jpg" style="height: 350px; width: 350px; display: flex; align-items: center;" class="card-img-top"
+            alt="tees" />
+          <div class="card-body">
+            <h5 class="card-title">T-Shirts</h5>
+            <p class="card-text">
+              Show your style and support for the event with our exclusive branded t-shirts! 
+              Crafted with comfort and quality in mind, these tees are perfect for showcasing your enthusiasm long after the event ends.
+            </p>
+          </div>
+        </div>
+      <div class="col">
+        <div class="card">
+          <img src="https://img.etimg.com/thumb/width-420,height-315,imgsize-49506,resizemode-75,msid-108105870/news/how-to/ten-innovative-tech-gadgets-to-help-maintain-your-health-fitness.jpg"  style="height: 350px; width: 350px;" class="card-img-top"
+            alt="Los Angeles Skyscrapers" />
+          <div class="card-body">
+            <h5 class="card-title">Tech Gadgets</h5>
+            <p class="card-text">
+              Win cutting-edge tech gadgets that will elevate your digital lifestyle! From sleek headphones to smart home devices, these prizes are designed to keep you connected 
+              and ahead of the curve in the world of technology.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- events -->
+    <section id="events">
+      <div class="container">
+          <div class="section-heading wow fadeIn">
+              <h2 style="font-size: 40px; margin-bottom: 10px; text-align: center"><span class="text-danger" style="font-style: italic;">History </span>of TechVolution</h2>
+              <div class="heading-separator"></div>
+          </div>
+          <div class="row" >
+              <div class="history-wrapper">
+                  <div class="title-wrap text-center one-of-two">
+                      <!-- <h2 class="h1 text-secondary mb-0 text-uppercase">Bootdey.com</h2>
+                      <p class="fs-3 font-weight-500">Bootstrap snippet</p> -->
+                  </div>
+                  <div class="timeline-box one-of-two text-center">
+                      <img class="mb-1-6 rounded" src="https://www.aces.edu/wp-content/uploads/2021/11/GettyImages-875599880-scaled.jpg" style="height: 230px; width: 300px;">
+                      <div class="content">
+                          <h3 class="h4 mb-2 mb-md-3">Innovation Award</h3>
+                          <p class="mb-0">Acknowledgment for introducing groundbreaking ideas, technologies, or approaches within the event, fostering creativity and pushing the boundaries of what's possible in the tech industry.</p>
+                      </div>
+                      <div class="year">1995</div>
+                  </div>
+                  <div class="timeline-box one-of-two">
+                      <img class="mb-1-6 rounded" src="https://neuroject.com/wp-content/uploads/2023/07/Top_21_Biggest_Tech_Events_in_the_World_for_2023_Neuroject_01.jpg" alt="..."
+                      style="height: 280px; width: 280px;">
+                      <div class="content">
+                          <h3 class="h4 mb-2 mb-md-3">Best Tech Event</h3>
+                          <p class="mb-0"> Recognition for overall excellence in organizing and executing a technology-focused event, awarded by industry experts, attendees, or media outlets.</p>
+                      </div>
+                      <div class="year">2003</div>
+                  </div>
+                  <div class="timeline-box one-of-two">
+                      <img class="mb-1-6 rounded" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrLzpu3FtkQBIi72noj-c9mGemXH6Y69swxA8w71g_qOWqjjLJmFNcD8RKjv1iZmjY2_s&usqp=CAU" alt="..."
+                      style="height: 280px; width: 280px;">
+                      <div class="content">
+                          <h3 class="h4 mb-2 mb-md-3">International Recognition</h3>
+                          <p class="mb-0">Awards received for attracting participants, speakers, and attendees from diverse geographical regions, establishing the event as a global hub for tech innovation and collaboration.</p>
+                      </div>
+                      <div class="year">2018</div>
+                  </div>
+                  <div class="timeline-box one-of-two">
+                      <img class="mb-1-6 rounded" src="https://media.istockphoto.com/id/1289481257/photo/a-crowded-concert-hall-with-scene-stage-lights-rock-show-performance-with-people-silhouette.jpg?s=612x612&w=0&k=20&c=oNtQEaTIP-R83fnm8gIdmwBkzfncgoK4GljODaGK56k=" alt="..."
+                      style="height: 280px; width: 280px;">
+                      <div class="content">
+                          <h3 class="h4 mb-2 mb-md-3">Media Coverage Award</h3>
+                          <p class="mb-0">Recognition for fostering valuable partnerships with industry stakeholders, sponsors, exhibitors, or other organizations, contributing to the success and growth of the event.</p>
+                      </div>
+                      <div class="year">2021</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <!-- gallery -->
+
+    <div class="lightbox mb-2 p-3" id="gallery" data-mdb-lightbox-init>
+      <h5
+        style="font-size: 40px; margin-bottom: 10px; text-align: center"
+        class=""
+      >
+        The
+        <span class="text-danger" style="font-style: italic">Picture</span>
+        Panorama
+      </h5>
+      <div class="row mt-5">
+        <div class="col-lg-6">
+          <img
+            src="https://meetings.skift.com/wp-content/uploads/2023/11/a-group-of-diverse-professionals-in-a-high-tech-environment-brainstorming-and-discussing-around-a-futuristic-display-of-advanced-event-technology.jpg"
+            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+            alt="Dark Roast Iced Coffee"
+            class="w-100 mb-2 shadow-1-strong rounded"
+          />
+        </div>
+        <div class="col-lg-6">
+          <img
+            src="https://media.licdn.com/dms/image/C4D12AQF1MDORJSI0zg/article-cover_image-shrink_600_2000/0/1573551014437?e=2147483647&v=beta&t=3G_RSm4MIqkKfrC-D7oaKv53H3XPJD2ULWpCFjVXRI0"
+            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+            alt="Dark Roast Iced Coffee"
+            class="w-100 mb-2 shadow-1-strong rounded"
+          />
+        </div>
+        <div class="col-lg-6">
+          <img
+            src="D:\embrizon project\360_F_298559228_qAu46P4ahX5oneA6pNIkATQhXIXmoRRU.jpg"
+            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+            alt="Dark Roast Iced Coffee"
+            class="w-100 mb-2 shadow-1-strong rounded"
+          />
+        </div>
+
+        <div class="col-lg-6">
+          <img
+            src="D:\embrizon project\images.jpg"
+            data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+            alt="Dark Roast Iced Coffee"
+            class="w-100 mb-2 shadow-1-strong rounded"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- testimonials -->
+   
+    <div class="container1 mb-5" id="testimonials">
+      <h5
+      style="font-size: 40px; margin-bottom: 60px; text-align: center"
+      class=""
+    >
+      What do <span class="text-danger" style="font-style: italic">people</span>
+      Say?
+    </h5>
+      <div class="row">
+          <div class="col-lg-4 mb-4">
+              <div class="card1">
+                  <div class="face front-face">
+                      <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8fHww"
+                          alt="" class="profile">
+                      <div class="pt-3 text-uppercase name text-black">
+                          coding
+                      </div>
+                      <div class="designation text-black">major important topic</div>
+                  </div>
+                  <div class="face back-face">
+                      <span class="fas fa-quote-left"></span>
+                      <div class="testimonial text-black">
+                        Coding tests a variety of abilities. It hones problem-solving and analysis skills, such as finding errors and thinking logically. Further, coding often helps people develop teamwork and interpersonal skills since software and application projects are often cross-disciplinary and collaborative.
+                      </div>
+                      <span class="fas fa-quote-right"></span>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="card1">
+                  <div class="face back-face">
+                      <span class="fas fa-quote-left"></span>
+                      
+                      <span class="fas fa-quote-right"></span>
+                  </div>
+              </div>
+          </div>
+      
+        </div>
+        <!--  -->
+
+    </div>
+      </div>
+  </div>
+
+<!-- Carousel wrapper -->
+    <!-- about section -->
+    <section class="py-5" id="about">
+      <div class="container">
+        <div class="row gx-4 align-items-center justify-content-between">
+          <div class="col-md-5 order-2 order-md-1">
+            <div class="mt-5 mt-md-0">
+              <span class="text-muted">Team TechVolution</span>
+              <h2 class="display-5 fw-bold">About Us</h2>
+              <p class="lead">We are a Level 1 B-BBEE accredited company that comprises of a team of capable, well trained, dynamic engineering practitioners who are well equipped to provide cutting edge engineering and project management solutions to built-environment demands across the globe.</p>
+              <p class="lead">We believe in the power of shared moments to create positive change and memories that resonate. Join us in our journey to make every event an extraordinary adventure worth remembering.</p>
+              <p class="lead">Each member of this formidable team offers a range of combined experience in their areas of specialty;
+                We form strategic partnerships with companies that share the same transformation objectives as ourselves and play a key role in ensuring the development and sustainability of companies that we uplift and empower.</p>
+            </div>
+          </div>
+          <div class="col-md-6 offset-md-1 order-1 order-md-2">
+            <div class="row gx-2 gx-lg-3">
+              <div class="col-6">
+                <div class="mb-2"><img class="img-fluid rounded-3" src="https://blog.hyperiondev.com/wp-content/uploads/2019/02/Blog-Tech-Events.jpg"></div>
+              </div>
+              <div class="col-6">
+                <div class="mb-2"><img class="img-fluid rounded-3" src="https://a.storyblok.com/f/188325/1920x1280/41e681c422/alexandre-pellaes-6vajp0pscx0-unsplash-1-1.jpg"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
